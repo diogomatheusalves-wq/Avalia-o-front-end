@@ -44,8 +44,36 @@ header{
     padding: 4rem 5%;
     text-align: center;
 }
+
 .hero-ilustration{
     font-size: 5rem;
     margin-bottom: 1rem;
     opacity: 0.9;
+}
+/*Container de Categorias*/
+.container-categorias{
+    display: flex;
+    gap: 2rem;
+    padding: 3rem 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*Estilição dos Cards*/
+.card-categoria{
+    background-color: var(--branco-ceep);
+    border-radius: 12px;
+    padding: 2rem;
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-bottom: 8px solid var(--vermelho-ceep);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+.card-categoria.subsequente{
+    border-color: var(--amarelho-ceep);
+}
+.card-categoria:hover{
+    transform: translateY(-10px);
 }
