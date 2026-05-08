@@ -34,15 +34,13 @@
         <i class="fas fa-university fa-2x" style="color:var(--azul-estado)"></i>
         <strong> CEEP CIANORTE</strong>    
         </div>
-       
         <nav> 
-            <i class="fas fa-wheelchair"
-            title="Acessibilidade"
-            style="margin-right: 15px; cursor:pointer"
-            ></i>
-            <i class="fas fa-hands-asl-interpreting" title="Libras"
-            style="cursor : pointer"
-        ></i>
+        <div class="header-actions">
+        <a href="http://www.areadoaluno.seed.pr.gov.br/servicosaoaluno/pages/publico/login.jsf"
+       target="_blank"
+       class="btn-matricula">
+       Matricule-se PR</a>
+              </div>
         </nav>
     </header>
     <!--Area dividida-->
@@ -150,12 +148,25 @@
                 <a href="https://wa.me/554436319685" target="blank">WhattsApp</a>
                 <a href="https://facebook.com/ceepcianorte" target="blank">Facebook</a>
             </div>
+            
         </div>
         </div>
         <div class="footer-copy">
             <p >&copy; Centro Estadual de Educação Profissional de Cianorte 2024</p>
         </div>
     </footer>
+
+    <!--código do VLibras-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>;
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
 </body>
 
